@@ -1,0 +1,19 @@
+{
+  "version": "1",
+  "require_signature": true,
+  "publishers": {
+    "anthropic": {
+      "ed25519_public_key_hex": "<64-char-hex-pubkey>",
+      "allowed_extensions": ["anthropic.claude-code"]
+    }
+  },
+  "pinned_artifacts": {
+    "anthropic.claude-code": {
+      "min_version": "2.1.314",
+      "revoked_versions": ["2.1.312", "2.1.313"],
+      "sha256_by_version": {
+        "2.1.314": "<64-char-sha256-hex>"
+      }
+    }
+  }
+}
